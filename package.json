@@ -1,0 +1,19 @@
+{
+  "name": "block-generation-health-sample",
+  "version": "1.0.0",
+  "description": "Sample code for running a test to check whether a given blockchain validator is producing blocks or not.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velocitynetworkfoundation/block-generation-health-sample.git"
+  },
+  "author": "Itay Podhajcer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/velocitynetworkfoundation/block-generation-health-sample/issues"
+  },
+  "homepage": "https://github.com/velocitynetworkfoundation/block-generation-health-sample#readme"
+}
