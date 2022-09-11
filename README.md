@@ -26,7 +26,7 @@ The sample in this repository performs the following steps to reach a result tha
 
 ### Notes
 - `TOKEN_ENDPOINT` should hold the URL to Velocity's identity providers endpoint for retrieving token, which for `mainnet` is `https://velocitynetwork.us.auth0.com/oauth/token`.
-- `NODE_URL` should hold the node's full URL including HTTP scheme and port is using a non-standard one, for example `https://some.validator.com:8545`.
+- `NODE_URL` should hold the node's full URL including HTTP scheme and port if using a non-standard one, for example `https://some.validator.com:8545`.
 - Running this script against a non-validator node will fail the check, as block generation statistics are only available for nodes that are producing blocks, meaning nodes that were voted to be promoted to validators.
 
 
