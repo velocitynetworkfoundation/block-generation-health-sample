@@ -10,7 +10,7 @@ const nodesRoundsMargin = 2;
 const run = async () => {
   const nodeUrl = env.get('NODE_URL').required(true).asString();
   const tokenEndpoint = env.get('TOKEN_ENDPOINT').required(true).asString();
-  const clientId = env.get('CLIENT_ID').required().asString(true);
+  const clientId = env.get('CLIENT_ID').required(true).asString();
   const clientSecret = env.get('CLIENT_SECRET').required(true).asString();
 
   try {
