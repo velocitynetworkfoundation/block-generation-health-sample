@@ -8,10 +8,10 @@ const enodeRegExp = /(enode:\/\/)([0-9a-zA-Z].*)@(.*)/
 const nodesRoundsMargin = 2;
 
 const run = async () => {
-  const nodeUrl = env.get('NODE_URL').asString();
-  const tokenEndpoint = env.get('TOKEN_ENDPOINT').asString();
-  const clientId = env.get('CLIENT_ID').asString();
-  const clientSecret = env.get('CLIENT_SECRET').asString();
+  const nodeUrl = env.get('NODE_URL').required(true).asString();
+  const tokenEndpoint = env.get('TOKEN_ENDPOINT').required(true).asString();
+  const clientId = env.get('CLIENT_ID').required().asString(true);
+  const clientSecret = env.get('CLIENT_SECRET').required(true).asString();
 
   try {
     const authToken = await getToken(tokenEndpoint, clientId, clientSecret);
